@@ -1,0 +1,98 @@
+/* Default Setting  */
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+/* Nav Bar */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav,
+ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    padding: 14px;
+    min-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: aqua;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon {
+display: none;
+}
+
+/* **************  Mobile *********************/
+
+@media screen and (max-width:680px)
+{
+   ul.topnav li:not(:nth-child(1))
+    {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    
+     ul.topnav.reponsive li.dropdownIcon
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+        ul.topnav.reponsive
+    {
+        position: relative;
+        
+    }
+     ul.topnav.reponsive li
+    {
+        display: inline;
+        float: none;
+    }
+    
+      ul.topnav.reponsive li a
+    {
+        display: block;
+        text-align: left;
+    }
+    
+    
+    
+}
